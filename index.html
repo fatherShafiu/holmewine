@@ -5,9 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Holm wine</title>
+  <style>
+    /* Add this to your CSS stylesheet */
+main div {
+  background: rgba(116, 111, 111, 0.91); /* White with 80% opacity */
+  padding: 20px; /* Add padding for spacing */
+  color: white;
+  border-radius: 20px;
+}
 
+@media (max-width: 768px) {
+  main {
+    width: 90%; /* Set the width to 90% for mobile devices */
+    margin: 0 auto; /* Center the element horizontally */
+  }
+}
+
+main h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h1{
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+}
+  </style>
 </head>
 
 <body>
@@ -19,8 +45,8 @@
       <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="/catalog.html">Wines</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#contact-section">Contact Us</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/team.html">Our Team</a></li>
       </ul>
     </nav>
   </header>
@@ -35,16 +61,28 @@
     </div>
   </main>
 
-
   <footer>
-    <p class="footera"><a>&copy; 2023 The Holm wine  </a></p>
-    <div id="contact-section">
-      <p>Contact us: </p>
-      <p>Phone: <a href="tel:+233244883888">+233 244-883-888</a></p>
-      <p>Email: <a href="mailto:info@yourwebsite.com">info@theholmwine.com</a></p>
-
+    <div class="footera">
+        <p>&copy; 2023 The Holm Wine</p>
     </div>
-  </footer>
+    <hr>
+    <div id="contact-section">
+        <p>Contact:</p>
+        <p>
+            <i class="fas fa-envelope"></i> <a href="mailto:holmwine@gmail.com">holmwine@gmail.com</a>
+        </p>
+        <p>
+            <i class="fas fa-phone"></i> <a href="tel:+233202033330">0202033330</a> / <a href="tel:+233303941999">0303941999</a>
+        </p>
+        <p>
+            <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/holm_wine" target="_blank">Instagram</a> |
+            <i class="fab fa-twitter"></i> <a href="https://twitter.com/holm_wine" target="_blank">Twitter</a> |
+            <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Theholmwine" target="_blank">Facebook</a>
+        </p>
+    </div>
+</footer>
+
+
 </body>
 
 </html>
