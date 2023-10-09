@@ -6,21 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
   <style>
-     @media screen and (max-width: 800px) {
-    .drink-card{
-      width: 100%;
-    }
-  }
+
 
   strong{
     color: crimson;
   }
+/* Add styling to create separation */
+.separation {
+  height: 20px; /* Adjust the height as needed */
+}
 
+@media screen and (max-width: 800px) {
+    .drink-card{
+      width: 100%;
+
+    }
+    .separation {
+       height: 7.5em; /* Adjust the height as needed */
+   }
+  }
   </style>
 </head>
 <body>
     <header>
-
         <img src="/assets/logo.ico" alt="Logo" class="logo">
         <h1>The Holm Wine</h1>
         <nav>
@@ -32,9 +40,13 @@
           </ul>
         </nav>
       </header>
-  <header>
-    <h1>Welcome to Our Wines catalog</h1>
-  </header>
+
+      <div class="separation"></div> <!-- Add a separation div -->
+
+      <header>
+        <h1>Welcome to Our Wines catalog</h1>
+      </header>
+
 
   <section class="menu">
     <div class="drink-card">
