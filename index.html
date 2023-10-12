@@ -1,81 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Holmwine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-D3k7CSD1s/lW5M2lq+5U+9ksszJ/F9pUdBTn7m/Fi5o+YVBqN4/NNHbnoGes5yxC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>The Holm wine</title>
-  <style>
-    /* Add this to your CSS stylesheet */
-main div {
-  background: rgba(111, 116, 113, 0.91); /* White with 80% opacity */
-  padding: 20px; /* Add padding for spacing */
-  color: white;
-  border-radius: 20px;
+ <style>
+      .header-logo {
+    text-align: center; /* Center the logo and text horizontally */
+   /* Add padding for vertical centering */
 }
 
-@media (max-width: 768px) {
-  main {
-    width: 90%; /* Set the width to 90% for mobile devices */
-    margin: 0 auto; /* Center the element horizontally */
-  }
+.logo-container {
+    display: inline-block; /* Ensure the logo and text are in-line */
+    text-align: center; /* Center the logo and text horizontally within the container */
 }
-  </style>
+
+.brand-name {
+    position: relative;
+    top: -10px;
+    font-weight: bold; /* Make the text bold */
+
+    font-size: 22px;
+}
+
+ </style>
 </head>
 <body>
-  <header>
+    <nav id="navigation">
+        <div id="navigation-inside">
+          <ul>
+            <li>
+              <a href="team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="catalog.html" class="is-active">Wines</a>
+            </li>
 
-    <img src="/assets/logo.ico" alt="Logo" class="logo">
-    <h1>The Holm Wine</h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/catalog.html">Wines</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/team.html">Our Team</a></li>
-      </ul>
-    </nav>
-  </header>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- header begins -->
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo-container">
+                <img style="border-radius: 50%; width: 40px; height: 40px;" src="assets/logo.ico" alt="holmwine-logo">
+                <span class="brand-name">The Holm wine</span>
+            </div>
+        </div>
+
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="catalog.html"><i class="fa fa-tasks"></i> Wines</a>
+            <a href="about.html"><i class="fa fa-users"></i> About us</a>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact us</a>
+            <!-- <a href="#"><i class="fa fa-ellipsis-h"></i> more</a> -->
+
+
+        </nav>
+        <a href="catalog.html" class="fixed-menu"  style="font-family: 'consolas' ">
+           <i style="color: red;" class="fa fa-video-camera fw"></i>Browse Wines</a>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="support.html" class="btn">Become a Partner</a>
+        <i class="fa fa-bars" id="small-menu"></i>
+    </header>
+          <!-- home section begins -->
+       <section class="home" id="home">
+
+        <div class="home-content" style="background-color: white; opacity:.8; padding: 20px; border-radius: 20px;">
+            <h2 style="font-family: 'Pacifico', cursive; color: black;" class="heading">Welcome to The Holm Wine</h2>
+            <p style="color:black" style="font-weight:bolder;">Discover a wide variety of drinks and enjoy a great time with friends!</p>
+            <a href="#" class="btn">Be our Partner</a>
+        </div>
+    </section>
+
+        <!-- Home about section begins -->
+        <section class="home-about" id="about">
+            <div class="home-about-img">
+                <img style="border-radius: 10px;" src="assets/4.jpg" alt="group photo">
+            </div>
+
+            <div class="home-about-content">
+                <h2 class="heading"><span>Welcome to The Holmwine</span></h2>
+                <h3 style="font-family: 'Pacifico', cursive;">where passion and adventure come together to create exceptional wines.</h3>
+                <p>From a childhood fascination with wines to a journey across the globe, I have experienced the incredible diversity of terroirs and the magic they hold.
+                    When we first set foot in Cape Town, we knew that this was the place where my dreams would take flight. In 2008, after exploring countless vineyards and wine regions in South Africa, we became captivated by the untapped potential of winemaking.
+                </p>
+                <a href="about.html" class="btn">Read More</a>
+            </div>
+        </section>
+
+    <!-- projects section begings  -->
+
+    <section class="projects" id="projects">
+        <h2 class="heading">  <span>Our services and Events</span></h2>
+
+        <div class="projects-container">
+            <div class="project-box">
+                <i class="fa fa-pencil"></i>
+                <h3>Wine Tasting Events</h3>
+                <p>Holm Wine hosts exclusive wine tasting events throughout the year, showcasing our finest vintages and providing a delightful experience for wine enthusiasts. Join us to explore the world of flavors and aromas in every bottle of Holm Wine.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="project-box">
+                <i class="fa fa-edit"></i>
+                <h3>Vineyard Tours</h3>
+                <p>Experience the beauty of our vineyards through guided tours. Learn about the winemaking process, stroll through the lush vineyards, and savor the picturesque landscapes that make Holm Wine a unique destination for wine lovers.</p>
+                <a href="vineyard_tours.html" class="btn">Read More</a>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="menu" style="margin-top: 50px;">
+        <div class="drink-card">
+            <img src="/assets/images/1.jpg" alt="Red Muscadel" width="300" height="200">
+          <h3>Red Muscadel</h3>
+          <p>
+            This sweet yet balanced dessert wine has an attractive musk and rose petal aroma on entry, followed by succulent red berries, Turkish delight, and apricots on the palate.
+          </p>
+          <p><strong>Drink me with...</strong></p>
+          <p>Chocolate brownies, mature cheeses, hearty soups. Delicious served cold as a cocktail with crushed ice and fresh fruit garnish.</p>
+          <p><strong>Did you know?</strong></p>
+          <p>
+            Muscadel, or Muscat de Frontignan, is one of the oldest grape varieties in the country and owes its popularity in South Africa due to its versatility. It is cultivated to produce table grapes, raisins, juice, moskonfyt, and, of course, sweet fortified wines.
+          </p>
+        </div>
+
+        <div class="drink-card">
+          <img src="/assets/images/2.jpg" alt="White Muscadel" width="300" height="200">
+          <h3>White Muscadel</h3>
+          <p>
+            This wine has beautiful floral blossoms on the nose, followed by lovely litchi and dried fruit flavors on the palate.
+          </p>
+          <p><strong>Drink me with...</strong></p>
+          <p>Vanilla cake, mature cheeses, hearty soups. Delicious served cold as a cocktail with crushed ice and fresh fruit garnish.</p>
+          <p><strong>Did you know?</strong></p>
+          <p>
+            Sweet wines have been produced from ancient times. The very first known mention of sweet wines comes from a poem 'The Works and Day's' by Greek poet Hesiod dating from around 700 BC. The poem describes the production of Cypriot Manna, a sweet straw wine from Cyprus.
+          </p>
+        </div>
+
+    <div class="drink-card">
+        <img src="/assets/images/3.jpg" alt="White Jerepigo" width="300" height="200">
+        <h3>White Jerepigo</h3>
+        <p>
+            This golden coloured dessert wine shows an enticing honeysuckle aroma on the nose, followed by sun-ripened sultana and candied pineapple on the palate.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Milk tart, custard cake, mature cheeses.</p>
+        <p><strong>Did you know?</strong></p>
+        <p>
+            A jerepigo is a generic name for a fortified wine and can be produced from any red or white grape variety, by adding grape alcohol to unfermented grape juice. In effect, a jerepigo is simply grape juice preserved in alcohol.
+        </p>
+    </div>
+
+    <div class="drink-card">
+        <img src="/assets/images/4.jpg" alt="Red Jerepigo" width="300" height="200">
+        <h3>Red Jerepigo</h3>
+        <p>
+            This sweet yet balanced dessert wine brims with red berry flavour, as well as plums and spiced fruitcake.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Spicy stews, mature cheeses, fruity desserts.</p>
+        <p><strong>Did you know?</strong></p>
+        <p>
+            A jerepigo is a generic name for a fortified wine and can be produced from any red or white grape variety, by adding grape alcohol to unfermented grape juice. In effect, a jerepigo is simply grape juice preserved in alcohol.
+        </p>
+    </div>
+
+    <div class="drink-card">
+        <img src="/assets/images/1.jpg" alt="Hanepoot" width="300" height="200">
+        <h3>Hanepoot</h3>
+        <p>
+            This amber coloured dessert wine is sweet yet balanced, with sun-kissed sultana, butterscotch, and litchi flavours abounding from entry to finish.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Fruit pavlova, sticky toffee pudding, strong cheeses.</p>
+        <p><strong>Did you know?</strong></p>
+        <p>
+            Hanepoot is a South African name for Muscat of Alexandria or Muscat d'Alexandrie, and is often produced in a fortified style. Muscadels and Hanepoots often exhibit musk and floral aromas, as well as notes of sweet stone fruit, litchi, and gingery spice.
+        </p>
+    </div>
+
+    <div class="drink-card">
+        <img src="/assets/images/2.jpg" alt="Cape Vintage" width="300" height="200">
+        <h3>Cape Vintage</h3>
+        <p>
+            This deep ruby coloured dessert wine has enticing notes of oak spice and mocha underpinned by a fruity core of plums and red berries.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Dark chocolate, venison, blue cheese.</p>
+        <p><strong>Did you know?</strong></p>
+        <p>
+            Cape Vintage is the South African term for a port-style wine made from a single vintage, which has been matured in oak barrels or tanks for at least one year.
+        </p>
+    </div>
 
 
 
-  <main>
+    <div class="drink-card">
+        <img src="/assets/images/3.jpg" alt="Shiraz" width="300" height="200">
+        <h3>Shiraz</h3>
+        <p>
+            This has a wonderful dark and rich colour with deep purple undertones. The aroma of the wine is intense with floral tones such as Yasmine, cinnamon, and bacon. The palate is well balanced and textured with soft round tannins and a pure fruit core shining through.
+        </p>
+        <p>
+            This full-bodied red wine has beautiful plum and ripe blackberry flavours, with a hint of pepper, cloves, and savory umami on the lingering finish.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Enjoy me with bobotie, mushroom risotto, pepper-sauced steak.</p>
+    </div>
+
+    <div class="drink-card">
+        <img src="/assets/images/4.jpg" alt="Rosé sweet" width="300" height="200">
+        <h3>Rosé sweet</h3>
+        <p>
+            This sunset-coloured medium sweet wine has lovely hints of strawberry, Turkish delight, and candy floss, backed up by floral notes and a balanced acidity.
+        </p>
+        <p><strong>Drink me with...</strong></p>
+        <p>Spicy seafood paella, fruity desserts.</p>
+        <p><strong>Did you know?</strong></p>
+        <p>
+            Rosé traditionally gets its attractive pink colour from the fact that the skin is left to sit in contact with the crushed grapes for a while. The longer it sits, the darker the colour will become, leaning towards red.
+       </p>
+       </div>
+
+
+ </section>
+ <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
+    <span style="font-size: 16px; text-align: center; background-color: #902810; padding: 10px; border-radius: 5px;">
+      <a href="catalog.html" style="text-decoration: none; color: #fff; font-weight: bold;">See More Wines</a>
+    </span>
+  </div>
+  <br>
+        <!-- contact section begins  -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Us</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" id="" placeholder="Fullname" required>
+                <input type="email" name="email" id="" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" min="0" name="num" id="" placeholder="Mobile Number" required>
+                <input type="text" name="" id="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+        <!-- footer begins here -->
+    <footer class="footer">
+        <div class="footer-social-media">
+            <a href="https://www.facebook.com/Theholmwine" ><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/holm_wine"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/holm_wine"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCcfmzQWeOu21IRqxN3kaH_Q"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+    </footer>
+    <footer>
+        <div class="footera">
+            <p>&copy; 2023 The Holm Wine</p>
+        </div>
+        <hr>
+        <div id="contact-section">
+            <p>Contact:</p>
+            <p>
+                <i class="fas fa-envelope"></i> <a href="mailto:holmwine@gmail.com">holmwine@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> <a href="tel:+233202033330">0202033330</a> / <a href="tel:+233303941999">0303941999</a>
+            </p>
+            <p>
+                <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/holm_wine" target="_blank">Instagram</a> |
+                <i class="fab fa-twitter"></i> <a href="https://twitter.com/holm_wine" target="_blank">Twitter</a> |
+                <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Theholmwine" target="_blank">Facebook</a>
+            </p>
+        </div>
+
+    </footer>
+    <hr size="5px noshade">
     <div>
-      <h2>Welcome to The Holm Wine</h2>
-      <p>Discover a wide variety of drinks and enjoy a great time with friends!</p>
-      <a href="/catalog.html" class="btn">Browse our Wines</a>
-    </div>
-  </main>
 
-  <footer>
-    <div class="footera">
-        <p>&copy; 2023 The Holm Wine</p>
-    </div>
-    <hr>
-    <div id="contact-section">
-        <p>Contact:</p>
-        <p>
-            <i class="fas fa-envelope"></i> <a href="mailto:holmwine@gmail.com">holmwine@gmail.com</a>
-        </p>
-        <p>
-            <i class="fas fa-phone"></i> <a href="tel:+233202033330">0202033330</a> / <a href="tel:+233303941999">0303941999</a>
-        </p>
-        <p>
-            <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/holm_wine" target="_blank">Instagram</a> |
-            <i class="fab fa-twitter"></i> <a href="https://twitter.com/holm_wine" target="_blank">Twitter</a> |
-            <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Theholmwine" target="_blank">Facebook</a>
-        </p>
-    </div>
-
-</footer>
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>

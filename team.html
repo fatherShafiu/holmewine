@@ -1,131 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wikimedia</title>
 
-    <title>The Holmwine, Our Team</title>
-    <style>
-        body {
-            background-color: #333; /* Dark background color */
-            color: #fff; /* Text color */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
+        <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <title>
+            The Holmwine
+        </title>
+        <style>
+              .header-logo {
+    text-align: center; /* Center the logo and text horizontally */
+   /* Add padding for vertical centering */
+}
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
+.logo-container {
+    display: inline-block; /* Ensure the logo and text are in-line */
+    text-align: center; /* Center the logo and text horizontally within the container */
+}
 
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.brand-name {
+    position: relative;
+    top: -10px;
+    font-weight: bold; /* Make the text bold */
 
-        .team-member {
-            background-color: #444;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            text-align: center;
-            width: 300px;
-        }
+    font-size: 22px;
+}
 
-        .team-member img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
+        </style>
+    </head>
+    <body>
+        <nav id="navigation">
+            <div id="navigation-inside">
+              <ul>
+                <li>
+                  <a href="team.html">Our Team</a>
+                </li>
+                <li>
+                  <a href="catalog.html" class="is-active">Wines</a>
+                </li>
 
-        .position {
-            font-style: italic;
-            color: #aaa;
-            margin-top: 10px;
-        }
+              </ul>
+            </div>
+          </nav>
 
-        .separator {
-            border-top: 1px solid #555;
-            margin: 20px 0;
-        }
+        <!-- header begins -->
+        <header class="header">
+            <div class="header-logo">
+                <div class="logo-container">
+                    <img style="border-radius: 50%; width: 40px; height: 40px;" src="assets/logo.ico" alt="holmwine-logo">
+                    <span class="brand-name">The Holm wine</span>
+                </div>
+            </div>
 
-        a{
-            color: white;
-        }
 
-        h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
-  }
+            <nav class="navbar">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                <a href="catalog.html"><i class="fa fa-tasks"></i> Wines</a>
+                <a href="about.html"><i class="fa fa-users"></i> About us</a>
+                <a href="contact.html"><i class="fa fa-envelope"></i> Contact us</a>
+                <!-- <a href="#"><i class="fa fa-ellipsis-h"></i> more</a> -->
 
-  h2 span{
-    font-family: 'Great vibes', cursive;
-  }
 
-  @media screen and (max-width: 800px) {
+            </nav>
+            <a href="catalog.html" class="fixed-menu"  style="font-family: 'consolas' ">
+               <i style="color: red;" class="fa fa-video-camera fw"></i>Browse Wines</a>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a  href="support.html" class="btn">Become a Partner</a>
+            <i class="fa fa-bars" id="small-menu"></i>
+        </header>
 
-    .separation {
-       height: 10em; /* Adjust the height as needed */
-   }
-  }
-    </style>
-</head>
-<body>
-    <header>
+        <!-- team section begings  -->
+    <section class="team" id="team">
+        <h2 class="heading">Meet Our <span>Team</span></h2>
 
-        <img src="/assets/logo.ico" alt="Logo" class="logo">
-        <h1>The Holm Wine</h1>
-        <nav>
-          <ul class="menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/catalog.html">Wines</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/team.html">Our Team</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="separation"></div> <!-- Add a separation div -->
-    <h1>Our Team</h1>
+        <div class="team-box">
+            <div class="member-box">
+                <img src="assets/cecil.jpg" alt="">
+                <div class="memb-details">
+                    <h4>Cecil Sunkwa-Mills</h4>
+                    <p>Director</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="team">
-        <div class="team-member">
-            <img src="assets/images/cecil.jpg" alt="Cecil Sunkwa Mills">
-            <h2><span>C</span> ecil Sunkwa-Mills</h2>
-            <p class="position"> Director</p>
+            <div class="member-box">
+                <img src="assets/last.jpg" alt="">
+                <div class="memb-details">
+                    <h4>Betrose Bondzie-Koomson</h4>
+                    <p>Administrator</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-box">
+                <img src="assets/sylvia.jpg" alt="">
+                <div class="memb-details">
+                    <h4>Sylvia Holm</h4>
+                    <p>Managing Director</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-box">
+                <img src="assets/isaac.jpg" alt="">
+                <div class="memb-details">
+                    <h4>Isaac Holm/h4>
+                    <p>Accountant</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-social-media">
+            <a href="https://www.facebook.com/Theholmwine" ><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/holm_wine"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/holm_wine"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCcfmzQWeOu21IRqxN3kaH_Q"><i class="fa fa-youtube"></i></a>
+
         </div>
 
-        <div class="team-member">
-            <img src="/assets/images/last.jpg" alt="Betrose Bondzie-Koomson">
-            <h2><span>B</span>etrose Bondzie-Koomson</h2>
-            <p class="position">Administrator</p>
-        </div>
-
-        <div class="team-member">
-            <img src="/assets/images/sylvia.jpg" alt="Sylvia Holm">
-            <h2><span>S</span>ylvia Holm</h2>
-            <p class="position">Managing Director</p>
-        </div>
-
-        <div class="team-member">
-            <img src="/assets/images/isaac.jpg" alt="Isaac Holm">
-            <h2><span>I</span>saac Holm</h2>
-            <p class="position">Accountant</p>
-        </div>
-    </div>
-
-    <div class="separator"></div>
-
-    <div class="team-member">
-        <h2>Marketing & Sales Manager</h2>
-    </div>
-
+    </footer>
     <footer>
         <div class="footera">
             <p>&copy; 2023 The Holm Wine</p>
@@ -147,5 +165,5 @@
         </div>
 
     </footer>
-</body>
+    </body>
 </html>

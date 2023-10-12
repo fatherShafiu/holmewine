@@ -3,112 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us, The Holmwine</title>
+    <title>Wikimedia</title>
+
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            color: #121212;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+        }
+
+        header {
+            background-color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+
+          }
+          section{
+            font-size: 16px;
+          }
+          .header-logo {
+    text-align: center; /* Center the logo and text horizontally */
+   /* Add padding for vertical centering */
 }
 
-body {
-    background-color: #121212;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.logo-container {
+    display: inline-block; /* Ensure the logo and text are in-line */
+    text-align: center; /* Center the logo and text horizontally within the container */
 }
 
-header {
-    background-color: #333;
-    padding: 1rem;
+.brand-name {
+    position: relative;
+    top: -10px;
+    font-weight: bold; /* Make the text bold */
+
+    font-size: 22px;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.about {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #222;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-}
-footer a {
-    color: #fff;
-    text-decoration: none;
-
-  }
     </style>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Wines</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Our Team</a></li>
-            </ul>
+    <nav id="navigation">
+        <div id="navigation-inside">
+          <ul>
+            <li>
+              <a href="team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="catalog.html" class="is-active">Wines</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <!-- header begins -->
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo-container">
+                <img style="border-radius: 50%; width: 40px; height: 40px;" src="assets/logo.ico" alt="holmwine-logo">
+                <span class="brand-name">The Holm wine</span>
+            </div>
+        </div>
+
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="catalog.html"><i class="fa fa-tasks"></i>wines</a>
+            <a href="about.html"><i class="fa fa-users"></i> About us</a>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact us</a>
+            <!-- <a href="#"><i class="fa fa-ellipsis-h"></i> more</a> -->
+
+
         </nav>
+        <a href="catalog.html" class="fixed-menu"  style="font-family: 'consolas'">
+           <i style="color: red;" class="fa fa-video-camera fw"></i>Browse Wines</a>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="support.html" class="btn">Become a Partner</a>
+        <i class="fa fa-bars" id="small-menu"></i>
     </header>
 
-    <section class="about">
-        <section class="about">
-            <h1>About Us</h1>
-            <p>Welcome to Holm Wines, where passion and adventure come together to create exceptional wines. From a childhood fascination with wines to a journey across the globe, I have experienced the incredible diversity of terroirs and the magic they hold.</p>
-            <br/>
-            <p>When I first set foot in Cape Town, I knew that this was the place where my dreams would take flight. In 2008, after exploring countless vineyards and wine regions in South Africa, I became captivated by the untapped potential of winemaking. Gradually, I began investing in this business because I firmly believe in the soil, microclimate, and the immense potential for crafting quality wines that South Africa possesses.</p>
-            <br/>
-            <p>My aim was to infuse the rich heritage of French winemaking, which spans over three centuries, with the vibrant spirit of South Africa. I have unwavering confidence in this great country and its people, and I want to contribute to its economic development.</p>
-            <br/>
-            <p>At Holm Wines, we take pride in our diverse range of wines. Whether you prefer the easy-going lifestyle of the West Coast, reflected in our Sparkling range, or the rich history and decadence of our renowned fortified wines, there is something for everyone to enjoy. Our wines are crafted with power, elegance, and balance, aiming to be recognized as world-class and awarded for their excellence.</p>
-            <br/>
-            <p>So, come and explore the world of Holm Wines. Join us on this extraordinary journey as we strive to create unforgettable experiences in every glass.</p>
-        </section>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <!-- about section begins -->
+     <section class="about" id="about">
 
 
-        <footer>
-            <div class="footera">
-                <p>&copy; 2023 The Holm Wine</p>
-            </div>
-            <hr>
-            <div id="contact-section">
-                <p>Contact:</p>
-                <p>
-                    <i class="fas fa-envelope"></i> <a href="mailto:holmwine@gmail.com">holmwine@gmail.com</a>
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i> <a href="tel:+233202033330">0202033330</a> / <a href="tel:+233303941999">0303941999</a>
-                </p>
-                <p>
-                    <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/holm_wine" target="_blank">Instagram</a> |
-                    <i class="fab fa-twitter"></i> <a href="https://twitter.com/holm_wine" target="_blank">Twitter</a> |
-                    <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Theholmwine" target="_blank">Facebook</a>
-                </p>
-            </div>
+                    <h1>About Us</h1>
+                    <p>Welcome to Holm Wines, where passion and adventure come together to create exceptional wines. From a childhood fascination with wines to a journey across the globe, I have experienced the incredible diversity of terroirs and the magic they hold.</p>
+                    <br/>
+                    <p>When I first set foot in Cape Town, I knew that this was the place where my dreams would take flight. In 2008, after exploring countless vineyards and wine regions in South Africa, I became captivated by the untapped potential of winemaking. Gradually, I began investing in this business because I firmly believe in the soil, microclimate, and the immense potential for crafting quality wines that South Africa possesses.</p>
+                    <br/>
+                    <p>My aim was to infuse the rich heritage of French winemaking, which spans over three centuries, with the vibrant spirit of South Africa. I have unwavering confidence in this great country and its people, and I want to contribute to its economic development.</p>
+                    <br/>
+                    <p>At Holm Wines, we take pride in our diverse range of wines. Whether you prefer the easy-going lifestyle of the West Coast, reflected in our Sparkling range, or the rich history and decadence of our renowned fortified wines, there is something for everyone to enjoy. Our wines are crafted with power, elegance, and balance, aiming to be recognized as world-class and awarded for their excellence.</p>
+                    <br/>
 
-        </footer>
-    <script src="script.js"></script>
+
+
+            <script src="script.js"></script>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-social-media">
+            <a href="https://www.facebook.com/Theholmwine" ><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/holm_wine"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/holm_wine"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCcfmzQWeOu21IRqxN3kaH_Q"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+    </footer>
+    <footer>
+        <div class="footera">
+            <p>&copy; 2023 The Holm Wine</p>
+        </div>
+        <hr>
+        <div id="contact-section">
+            <p>Contact:</p>
+            <p>
+                <i class="fas fa-envelope"></i> <a href="mailto:holmwine@gmail.com">holmwine@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> <a href="tel:+233202033330">0202033330</a> / <a href="tel:+233303941999">0303941999</a>
+            </p>
+            <p>
+                <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/holm_wine" target="_blank">Instagram</a> |
+                <i class="fab fa-twitter"></i> <a href="https://twitter.com/holm_wine" target="_blank">Twitter</a> |
+                <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/Theholmwine" target="_blank">Facebook</a>
+            </p>
+        </div>
+
+    </footer>
 </body>
 </html>
